@@ -1,0 +1,27 @@
+{
+  "name": "rdc-apex-src-lib-query-builder-feature-shell",
+  "$schema": "../../../../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/rdc-apex/src/lib/query-builder/feature/shell/src",
+  "prefix": "draft-apex",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/rdc-apex/src/lib/query-builder/feature/shell"],
+      "options": {
+        "jestConfig": "libs/rdc-apex/src/lib/query-builder/feature/shell/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/rdc-apex/src/lib/query-builder/feature/shell/**/*.ts",
+          "libs/rdc-apex/src/lib/query-builder/feature/shell/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

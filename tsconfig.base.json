@@ -14,7 +14,36 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@draft-apex/lib/apex-clouds/growth/feature/shell": [
+        "libs/lib/apex-clouds/growth/feature/shell/src/index.ts"
+      ],
+      "@draft-apex/rdc-apex": ["libs/rdc-apex/src/index.ts"],
+      "@draft-apex/rdc-apex/src/lib/apex-clouds/growth/data-access": [
+        "libs/rdc-apex/src/lib/apex-clouds/growth/data-access/src/index.ts"
+      ],
+      "@draft-apex/rdc-apex/src/lib/apex-clouds/growth/feature/shell": [
+        "libs/rdc-apex/src/lib/apex-clouds/growth/feature/shell/src/index.ts"
+      ],
+      "@draft-apex/rdc-apex/src/lib/query-builder/feature/builder": [
+        "libs/rdc-apex/src/lib/query-builder/feature/builder/src/index.ts"
+      ],
+      "@draft-apex/rdc-apex/src/lib/query-builder/feature/shell": [
+        "libs/rdc-apex/src/lib/query-builder/feature/shell/src/index.ts"
+      ],
+      "@draft-apex/rdc-apex/src/lib/query-builder/shell": [
+        "libs/rdc-apex/src/lib/query-builder/shell/src/index.ts"
+      ],
+      "@draft-apex/rdc-apex/src/lib/shell/feature": [
+        "libs/rdc-apex/src/lib/shell/feature/src/index.ts"
+      ],
+      "@draft-apex/rdc-apex/src/lib/shell/ui": [
+        "libs/rdc-apex/src/lib/shell/ui/src/index.ts"
+      ],
+      "@draft-apex/rdc-apex/src/lib/shell/ui/header": [
+        "libs/rdc-apex/src/lib/shell/ui/header/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

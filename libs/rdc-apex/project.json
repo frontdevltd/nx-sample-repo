@@ -1,0 +1,40 @@
+{
+  "name": "rdc-apex",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/rdc-apex/src",
+  "prefix": "draft-apex",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/angular:ng-packagr-lite",
+      "outputs": ["dist/libs/rdc-apex"],
+      "options": {
+        "project": "libs/rdc-apex/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/rdc-apex/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/rdc-apex/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/rdc-apex"],
+      "options": {
+        "jestConfig": "libs/rdc-apex/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/rdc-apex/**/*.ts", "libs/rdc-apex/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}
